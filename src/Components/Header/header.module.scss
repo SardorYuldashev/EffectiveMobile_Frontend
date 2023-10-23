@@ -1,0 +1,56 @@
+.header {
+  background: #1f1b1b;
+
+  &__content {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+
+    &-title {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 30px;
+      cursor: pointer;
+      transition: .3s;
+
+      &:hover {
+        color: #df4949;
+      }
+    }
+
+    &-user {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 30px;
+
+      p {
+        font-size: 20px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: .3s;
+
+        &:hover {
+          color: #df4949;
+        }
+      }
+
+      button {
+        padding: 5px 15px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        transition: .3s;
+        font-weight: 600;
+        background: #ffffff;
+        text-transform: uppercase;
+        
+        &:hover {
+          background: #c4c1ec;
+        }
+      }
+    }
+  }
+}

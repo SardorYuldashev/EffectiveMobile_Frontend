@@ -1,0 +1,141 @@
+.dashboard {
+
+  &__content {
+
+    &-title {
+      margin-top: 20px;
+      font-size: 35px;
+      text-align: center;
+    }
+
+    &-list {
+      border-top: 2px solid #000;
+      border-bottom: 2px solid #000;
+    }
+
+    &-li {
+      display: grid;
+      grid-template-columns: 1fr 2.5fr 2.5fr .5fr 2.5fr 1fr;
+      gap: 20px;
+      padding: 7px 10px;
+
+      h2 {
+        font-size: 28px;
+        cursor: default;
+      }
+    }
+
+    &-link {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 2.5fr 2.5fr .5fr 2.5fr 1fr;
+      gap: 20px;
+      padding: 10px 10px 7px;
+      color: #000;
+      transition: .3s;
+      cursor: default;
+
+      h2 {
+        font-size: 28px;
+        cursor: default;
+      }
+
+      &:hover {
+        background: #c4c1ec;
+      }
+    }
+
+    &-id {
+      font-weight: 600;
+    }
+
+    &-gender {
+      text-align: center;
+
+      img {
+        width: 20px;
+        height: 20px;
+        vertical-align: bottom;
+      }
+    }
+
+    &-username {
+      font-style: italic;
+      color: #0000007c;
+    }
+
+    &-tools {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    &-btn {
+      border: none;
+      background: none;
+      color: #00000079;
+      font-size: 20px;
+      cursor: pointer;
+      transition: .3s;
+
+      &:hover {
+        color: #000000;
+        animation: hoverBtn 2 .5s linear;
+      }
+    }
+
+    &-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-pageList {
+      margin: 10px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    &-button {
+      padding: 8px 15px;
+      font-size: 18px;
+      font-weight: 600;
+      border: none;
+      background: #000000;
+      color: #ffffff;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: .3s;
+
+      &:hover {
+        background: #88caf0;
+        color: #000000;
+      }
+    }
+  }
+}
+
+@keyframes hoverBtn {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  25% {
+    transform: rotateZ(10deg);
+  }
+
+  50% {
+    transform: rotateZ(0deg);
+  }
+
+  75% {
+    transform: rotateZ(-10deg);
+  }
+
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
